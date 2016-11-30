@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'Helveticaneuecyr-thin';
+    src: url('../fonts/helveticaneuecyr-thin.eot');
+    src: local('☺'), url('../fonts/helveticaneuecyr-thin.woff') format('woff'), url('../fonts/helveticaneuecyr-thin.ttf') format('truetype'), url('../fonts/helveticaneuecyr-thin.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "helveticaneuecyr-thin", Arial, Tahoma, sans-serif;
+}
+
+.top_menu {
+    background-image: url(../img/top_panel.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 36px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menu_list {
+    width: auto;
+    float: right;
+    box-sizing: border-box;
+}
+
+.menu_list li:nth-child(6) {
+    border-left: 1px solid #56a2dc;
+}
+
+.menu_list li:last-child {
+    background: linear-gradient(to top, #2e7ac4, #4eacda);
+}
+
+.menu_list li {
+    border: 1px solid transparent;
+    display: inline-block;
+}
+
+.menu_list a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 34px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.menu_list a img {
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.menu_list li:hover {
+    background: #4eabda;
+}
+
+.last_item:hover {
+    background: linear-gradient(to top, #2e7ac4, #4eacda);
+    border-left: 1px solid #5ea5e1;
+    border-right: 1px solid #5ea5e1;
+    border-bottom: 1px solid #5ea5e1;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    margin: 210px auto 0 auto;
+}
+
+.cadastr {
+    margin: 0 auto;
+    width: 560px;
+    height: 62px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.cadastr p {
+    margin: 0;
+    line-height: 62px;
+    font-size: 24px;
+    color: white;
+}
+
+.box {
+    margin: 0 auto;
+    width: 560px;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 2px;
+    position: relative;
+}
+
+.ou {
+    margin: 30px auto 0 auto;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ou span {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+}
+
+.ou>span:before, .ou>span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    /*height: 1px;*/
+    margin-top: -2px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid black;
+}
+
+.ou>span:before {
+    right: 100%;
+    margin-right: 5px;
+}
+
+.ou>span:after {
+    left: 100%;
+    margin-left: 5px;
+}
+
+button {
+    background-image: url(../img/fb_button.png);
+    width: 276px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0px;
+    padding: 0;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    background-image: linear-gradient(to top, #111 0%, #0e0d0d 100%);
+    box-shadow: 0 1px 0 #4b4b4b, inset 0 2px 5px rgba(29, 26, 22, 0.2), inset 0 0 2px rgba(0, 0, 0, 0.1);
+    border: 0;
+    padding: 0;
+    width: 276px;
+    height: 35px;
+    color: #fffbfb;
+    margin-bottom: 20px;
+}
+
+input[type=text], input[type=password], input[type=email]::-webkit-input-placeholder {
+    text-indent: 10px;
+}
+
+input[type=text]:hover {
+    background-image: linear-gradient(to top, #1b5288 0%, #1b5288 100%);
+    box-shadow: 0 1px 0 #4b4b4b, inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+input[type=password]:hover {
+    background-image: linear-gradient(to top, #1b5288 0%, #1b5288 100%);
+    box-shadow: 0 1px 0 #4b4b4b, inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+input[type=email]:hover {
+    background-image: linear-gradient(to top, #1b5288 0%, #1b5288 100%);
+    box-shadow: 0 1px 0 #4b4b4b, inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.center_form {
+    margin: 25px auto 20px auto;
+    width: 276px;
+}
+
+.fb_button {
+    width: 276px;
+    height: 35px;
+    margin: auto;
+    padding-top: 35px;
+}
+
+input[type="submit"] {
+    border: 0;
+    padding: 0;
+    width: 149px;
+    height: 35px;
+    background-image: url(../img/button.png);
+    border-radius: 4px;
+    color: #cccccc;
+}
+
+.center_form label {
+    color: #cccccc;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: #fffbfb;
+}
+
+.submit_button {
+    margin: 20px auto 0 auto;
+    width: 149px;
+    height: 35px;
+}
+
+.box p {
+    width: 310px;
+    height: 35px;
+    color: #ccc;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0 auto;
+    text-align: center;
+}
